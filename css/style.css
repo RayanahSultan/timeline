@@ -182,3 +182,31 @@ h2{
         top: calc(50% - 3px);
     }
 }
+@media screen and (max-width: 992px){
+    .circle{
+        background-color: #fff;
+        border: 3px dotted royalblue;
+        position: relative;
+        text-align: center;
+        padding: 10px 10px;
+        border-radius: 50%;
+        color: rgb(2, 0, 0);
+        max-height: 60px;
+        right: 0%;
+        z-index: 2;
+    }
+}
+@media screen and (max-width: 992px){
+    .circle-left{
+        background-color: #fff;
+        border: 3px dotted royalblue;
+        position: relative;
+        text-align: center;
+        padding: 10px 10px;
+        border-radius: 50%;
+        color: rgb(2, 0, 0);
+        max-height: 60px;
+        left: 15%;
+        z-index: 2;
+    }
+}
