@@ -66,19 +66,16 @@ h2{
 .connecting-lines.row .col-2.bottom::after{
        position: relative;
        height: 50%;
-    right: -2%;
+       right: -2%;
        top: 25%;
-       
 }
 .connecting-lines.row .col-2.full::after{
     height: 100%;
     right:79px;
-
 }
 .connecting-lines.row .col-2.full-left::after{
     height: 100%;
     left: 4px;
-    
 }
 .connecting-lines.row .col-2.top::after {
     height: 50%;
@@ -117,24 +114,71 @@ h2{
 }
 .timeline .top-left{
     left: -50%;
-    /*top: -50%;*/
     top:-45%;
-
 }
 .timeline .right-bottom{
     left: 50%;
     top: calc(50% - 3px);
 }
+
+
+
+
+/* make the line  when the screen = sm*/
 @media screen and (max-width: 786px){
     ::after {
         display: none;
     }
 }
-
-@media screen and (max-width: 786px){
-    circle{
-        text-align: center;
-    }circle-left{
-        text-align: center;
+/* make the line  when the screen = md*/
+@media screen and (max-width: 992px){
+    .connecting-lines.row .col-2.bottom::after{
+        position: relative;
+        height: 50%;
+        right: calc(35% - 1px);
+        top: 25%;
+    }
+}
+@media screen and (max-width: 992px){
+    .connecting-lines.row .col-2.full::after{
+        height: 100%;
+        right:29%
+    }
+}
+@media screen and (max-width: 992px){
+    .connecting-lines.row .col-2.full-left::after{
+        height: 100%;
+        left: -34%;
+    }
+}
+@media screen and (max-width: 992px){
+    .connecting-lines.row .col-2.top::after {
+        height: 50%;
+        left:calc(-35% - -1px);
+        bottom: 25%;
+      }
+}
+@media screen and (max-width: 992px){
+    .timeline .top-right{
+        left: 50%;
+        top:-45%;
+    }
+}
+@media screen and (max-width: 992px){
+    .timeline .left-bottom{
+        left: -49%;
+        top: calc(50% - 3px);
+    }
+}
+@media screen and (max-width: 992px){
+    .timeline .top-left{
+        left: -49%;
+        top:-45%;
+    }
+}
+@media screen and (max-width: 992px){
+    .timeline .right-bottom{
+        left: 50%;
+        top: calc(50% - 3px);
     }
 }
