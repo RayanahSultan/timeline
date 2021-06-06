@@ -66,23 +66,23 @@ h2{
 .connecting-lines.row .col-2.bottom::after{
        position: relative;
        height: 50%;
-       left: 1%;
+    right: -2%;
        top: 25%;
        
 }
 .connecting-lines.row .col-2.full::after{
     height: 100%;
-    right:45%;
-    
+    right:79px;
+
 }
 .connecting-lines.row .col-2.full-left::after{
     height: 100%;
-    left: 1%;
+    left: 4px;
     
 }
 .connecting-lines.row .col-2.top::after {
     height: 50%;
-    left: 1%;
+    left: 4px;
     bottom: 25%;
   }
 .timeline div{
@@ -109,7 +109,7 @@ h2{
 }
 .timeline .top-right{
     left: 50%;
-    top:-46%;
+    top:-45%;
 }
 .timeline .left-bottom{
     left: -50%;
@@ -117,7 +117,9 @@ h2{
 }
 .timeline .top-left{
     left: -50%;
-    top: -50%;
+    /*top: -50%;*/
+    top:-45%;
+
 }
 .timeline .right-bottom{
     left: 50%;
