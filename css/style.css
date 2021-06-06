@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+.circle{
+    background-color: #fff;
+    border: 3px dotted royalblue;
+    position: relative;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 50%;
+    color: rgb(2, 0, 0);
+    max-height: 60px;
+    right: 25%;
+    z-index: 2;
+}
+.circle-left{
+    background-color: #fff;
+    border: 3px dotted royalblue;
+    position: relative;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 50%;
+    color: rgb(2, 0, 0);
+    max-height: 60px;
+    left: 50%;
+    z-index: 2;
+}
+.circle-info {
+    height: 30px;
+    width: 30px;
+    background: #bcd463;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    -webkit-animation: blink-info 2.0s linear infinite;
+    -moz-animation: blink-info 2.0s linear infinite;
+    -ms-animation: blink-info 2.0s linear infinite;
+    -o-animation: blink-info 2.0s linear infinite;
+    animation: blink-info 2.0s linear infinite;
+}
+p{
+    color: blue;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: -2rem;
+}
+
+h2{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.connecting-lines.row .col-2{
+    align-self: stretch;
+}
+.connecting-lines.row .col-2::after{
+    content: "";
+    position: relative;
+    border-left: 3px solid  royalblue;
+    border-width: thick;
+    width:calc(10% - 3px);
+    z-index: 1;
+}
+.connecting-lines.row .col-2.bottom::after{
+       position: relative;
+       height: 50%;
+       left: 1%;
+       top: 25%;
+       
+}
+.connecting-lines.row .col-2.full::after{
+    height: 100%;
+    right:45%;
+    
+}
+.connecting-lines.row .col-2.full-left::after{
+    height: 100%;
+    left: 1%;
+    
+}
+.connecting-lines.row .col-2.top::after {
+    height: 50%;
+    left: 1%;
+    bottom: 25%;
+  }
+.timeline div{
+    padding: 0;
+    height: 40px;
+}
+.timeline hr{
+    border-top: 3px solid royalblue ;
+    margin: 0;
+    top: 17px;
+    position: relative;
+    border-width: thick;
+}
+.timeline .col-2{
+    display: flex;
+    overflow: hidden;
+}
+.timeline .corner{
+    border: 3px solid royalblue;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    border-width: thick;
+}
+.timeline .top-right{
+    left: 50%;
+    top:-46%;
+}
+.timeline .left-bottom{
+    left: -50%;
+    top: calc(50% - 3px);
+}
+.timeline .top-left{
+    left: -50%;
+    top: -50%;
+}
+.timeline .right-bottom{
+    left: 50%;
+    top: calc(50% - 3px);
+}
+@media screen and (max-width: 786px){
+    ::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px){
+    circle{
+        text-align: center;
+    }circle-left{
+        text-align: center;
+    }
+}
